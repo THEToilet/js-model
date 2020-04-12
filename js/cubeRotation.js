@@ -6,6 +6,10 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
+// 環境光を追加
+const ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.5);
+scene.add(ambientLight);
+
 // Collada 形式のモデルデータを読み込む
 const loader = new THREE.ColladaLoader();
 // dae ファイルのパスを指定
