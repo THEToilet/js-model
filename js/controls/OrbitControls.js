@@ -246,7 +246,9 @@ THREE.OrbitControls = function ( object, domElement ) {
 	}();
 
 	this.dispose = function () {
-
+		
+		document.getElementById('stage');
+		document.getElementById('stage');
 		scope.domElement.removeEventListener( 'contextmenu', onContextMenu, false );
 		scope.domElement.removeEventListener( 'mousedown', onMouseDown, false );
 		scope.domElement.removeEventListener( 'wheel', onMouseWheel, false );
@@ -1096,7 +1098,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	}
 
 	//
-
+	document.getElementById('stage');
 	scope.domElement.addEventListener( 'contextmenu', onContextMenu, false );
 
 	scope.domElement.addEventListener( 'mousedown', onMouseDown, false );
